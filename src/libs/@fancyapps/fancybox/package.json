@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fancyapps/fancybox@3.5.7",
-      "D:\\jobs\\freshaqua2"
+      "C:\\jobs\\fresh2"
     ]
   ],
   "_from": "@fancyapps/fancybox@3.5.7",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fancyapps/fancybox/-/fancybox-3.5.7.tgz",
   "_spec": "3.5.7",
-  "_where": "D:\\jobs\\freshaqua2",
+  "_where": "C:\\jobs\\fresh2",
   "author": {
     "name": "fancyApps"
   },

@@ -45,7 +45,7 @@ $(function() {
 
  //слайлер отзывы
  var reviewSwiper = new Swiper ('.reviews__slider', {
-    loop: true,
+    // loop: true,
     slidesPerView: 'auto',
     spaceBetween: 20,
     centeredSlides: true,
@@ -81,6 +81,26 @@ $(function() {
       prevEl: '.reviews__button-prev',
     },
   });
+
+
+    $(".block-nav__link").on("click", function(e) {
+        e.preventDefault();
+        $(".block-nav__link").removeClass("block-nav__link--active");
+        $(this).addClass("block-nav__link--active");
+
+        $('[data-filter]').addClass("review-card--hidden")
+        // debugger
+        $(".block-nav__link.block-nav__link--active").each(function(e){
+            console.log(e)
+            if($(this).data("btn-filter") === 1) {
+                $(".review-card").removeClass("review-card--hidden")
+            } else {
+                $('[data-filter="' + $(this).data("btn-filter") + '"]').removeClass("review-card--hidden");
+            }
+        });
+
+        reviewSwiper.update();
+    })
 
   var rvSwiper = new Swiper ('.js-slider', {
     loop: true,

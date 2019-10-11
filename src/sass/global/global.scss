@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:focus {
+  outline: none;
+}
+
 body {
   min-width: 320px;
   margin: 0;

@@ -8,6 +8,10 @@
   }
 }
 
+.review-card--hidden {
+  display: none;
+}
+
 .review-card__img {
   object-fit: cover;
   display: block;
