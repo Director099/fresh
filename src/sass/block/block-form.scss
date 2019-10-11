@@ -12,12 +12,40 @@
     margin-top: 16px;
 
     &--desktop {
-    display: inline-block;
-    margin-top: 0;
+      display: inline-block;
+      margin-top: 0;
     }
 
     &--mobile {
-    display: none;
+      display: none;
+    }
+
+    &--water {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: -160px;
+        width: 244px;
+        height: 244px;
+        background: url(../img/cup-water.png) no-repeat top left;
+      }
+    }
+
+    &--glass {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -120px;
+        left: -170px;
+        width: 302px;
+        height: 452px;
+        background: url("../img/water-decor.png") no-repeat center / contain;
+      }
     }
   }
 }
@@ -31,6 +59,7 @@
   padding: 20px 15px;
   text-align: center;
   position: relative;
+  z-index: 9;
 
   &--bg {
     background-image: url("../img/form-bg.png");

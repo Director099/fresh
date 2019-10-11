@@ -35,3 +35,66 @@
 @import "block/clients.scss";
 @import "block/examples.scss";
 @import "block/modal.scss";
+
+.block--cleaning .info-block .jq-selectbox__dropdown li {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.jq-selectbox__dropdown .disabled,
+option[disabled] {
+  display: none;
+}
+
+.jq-selectbox__dropdown li:hover {
+  background: #27eef6;
+  color: #fff;
+}
+
+
+.jq-selectbox__dropdown .selected {
+  background: transparent;
+}
+
+.service--crane {
+
+  @media (min-width: 1600px) {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: 0;
+      width: 182px;
+      height: 222px;
+      z-index: -1;
+      background: url("../img/decor-crane.png") no-repeat center / contain;
+    }
+  }
+}
+
+.block.block--cleaning {
+  @media (min-width: $desktop-width) {
+    overflow: visible;
+  }
+}
+
+.block {
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+  }
+}
+
+.js-slider {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.js-slider .reviews__buttons {
+
+  @media (min-width: $desktop-width) {
+    max-width: 762px;
+  }
+}

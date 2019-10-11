@@ -50,6 +50,12 @@
   }
 }
 
+.menu__wrap .button {
+  min-width: auto;
+  max-width: 210px;
+  width: 100%;
+}
+
 .menu__nav {
   margin-bottom: 30px;
   display: flex;

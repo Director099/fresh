@@ -135,6 +135,11 @@ img {
   flex-direction: column;
   justify-content: center; }
 
+.menu__wrap .button {
+  min-width: auto;
+  max-width: 210px;
+  width: 100%; }
+
 .menu__nav {
   margin-bottom: 30px;
   display: flex;
@@ -762,6 +767,9 @@ img {
 .block {
   padding: 0; }
 
+.block .container {
+  padding: 0; }
+
 .block--cleaning .swiper-container-autoheight .swiper-slide {
   height: 100%; }
 
@@ -783,7 +791,8 @@ img {
   margin: 30px 15px 65px;
   padding: 20px 15px;
   text-align: center;
-  position: relative; }
+  position: relative;
+  z-index: 9; }
   .block-form__wrap--bg {
     background-image: url("../img/form-bg.png");
     background-repeat: no-repeat;
@@ -1081,7 +1090,10 @@ img {
   list-style: none;
   padding-left: 0;
   padding-right: 0;
-  margin: 40px 15px 0; }
+  margin-top: 40px; }
+
+.plan__block-wrap {
+  margin: 0px 15px 0; }
 
 .plan__item {
   padding: 30px 15px;
@@ -1092,9 +1104,6 @@ img {
 .plan__block {
   max-width: 500px;
   margin: 0 auto; }
-
-.plan .block-form {
-  margin-top: -10px; }
 
 .contacts {
   padding: 0 15px;
@@ -1262,6 +1271,21 @@ img {
   height: 30px;
   padding: 4px; }
 
+.block--cleaning .info-block .jq-selectbox__dropdown li {
+  width: 100%;
+  margin-bottom: 0; }
+
+.jq-selectbox__dropdown .disabled,
+option[disabled] {
+  display: none; }
+
+.jq-selectbox__dropdown li:hover {
+  background: #27eef6;
+  color: #fff; }
+
+.jq-selectbox__dropdown .selected {
+  background: transparent; }
+
 @media (min-width: 768px) {
 
   .menu__link {
@@ -1423,7 +1447,10 @@ img {
     display: none; }
 
   .title--plan {
-    padding: 0 0 0 210px; }
+    text-align: left; }
+
+  .title--result {
+    max-width: 970px; }
 
   .promo {
     padding-top: 176px;
@@ -1643,8 +1670,7 @@ img {
     padding: 0; }
 
   .block--cleaning {
-    padding-right: 0;
-    overflow: hidden; }
+    padding-right: 0; }
 
   .block--cleaning .slider {
     overflow: visible; }
@@ -1678,6 +1704,30 @@ img {
   .block-form--mobile {
     display: none; }
 
+  .block-form--water {
+    position: relative; }
+
+  .block-form--water::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -160px;
+    width: 244px;
+    height: 244px;
+    background: url(../img/cup-water.png) no-repeat top left; }
+
+  .block-form--glass {
+    position: relative; }
+
+  .block-form--glass::after {
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: -170px;
+    width: 302px;
+    height: 452px;
+    background: url("../img/water-decor.png") no-repeat center/contain; }
+
   .block-form__wrap {
     padding: 40px 30px;
     margin: 0; }
@@ -1702,6 +1752,9 @@ img {
 
   .tariffs {
     padding: 97px 0 152px; }
+
+  .tariffs--bg-2 {
+    min-height: 1070px; }
 
   .tariffs__slider {
     margin-top: 100px; }
@@ -1762,7 +1815,10 @@ img {
     padding: 22px 20px; }
 
   .reviews {
-    margin-bottom: 160px; }
+    margin-bottom: 56px; }
+
+  .reviews--industrial {
+    margin-top: -100px; }
 
   .reviews__slider-pagination {
     margin: 0 30px;
@@ -1780,14 +1836,19 @@ img {
     display: inline-block; }
 
   .plan {
-    margin-bottom: 130px; }
+    padding-bottom: 130px;
+    padding-top: 106px;
+    background: url("../img/bg-form.png") no-repeat right top; }
 
   .plan__list {
+    margin-top: 64px; }
+
+  .plan__block-wrap {
     width: 60%;
     display: block;
     padding-left: 20px;
     margin-left: 30px;
-    margin-top: 64px; }
+    margin-top: -40px; }
 
   .plan__item {
     font-size: 18px;
@@ -1857,7 +1918,7 @@ img {
     z-index: 1; }
 
   .location iframe {
-    height: 530px;
+    height: 560px;
     z-index: 2; }
 
   .social-networks {
@@ -1906,7 +1967,34 @@ img {
     top: 30px;
     right: 30px;
     width: 40px;
-    height: 40px; } }
+    height: 40px; }
+
+  .block.block--cleaning {
+    overflow: visible; }
+
+  .block {
+    overflow: hidden; }
+
+  .js-slider {
+    width: 100%; }
+
+  .js-slider .reviews__buttons {
+    max-width: 762px; } }
+
+@media (min-width: 1600px) {
+
+  .service--crane {
+    position: relative; }
+
+  .service--crane::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 182px;
+    height: 222px;
+    z-index: -1;
+    background: url("../img/decor-crane.png") no-repeat center/contain; } }
 
 @media (min-width: 1700px) {
 

@@ -1,6 +1,8 @@
 .plan {
   @media (min-width: $desktop-width) {
-    margin-bottom: 130px;
+    padding-bottom: 130px;
+    padding-top: 106px;
+    background: url("../img/bg-form.png") no-repeat right top;
   }
 }
 
@@ -8,14 +10,22 @@
   list-style: none;
   padding-left: 0;
   padding-right: 0;
-  margin: 40px 15px 0;
+  margin-top: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 64px;
+  }
+}
+
+.plan__block-wrap {
+  margin: 0px 15px 0;
 
   @media (min-width: $desktop-width) {
     width: 60%;
     display: block;
     padding-left: 20px;
     margin-left: 30px;
-    margin-top: 64px;
+    margin-top: -40px;
   }
 }
 
@@ -52,8 +62,4 @@
   @media (min-width: $desktop-width) {
     margin-top: 40px;
   }
-}
-
-.plan .block-form {
-  margin-top: -10px;
 }
